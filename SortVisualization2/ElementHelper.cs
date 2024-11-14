@@ -64,5 +64,6 @@ namespace SortVisualization2
                 Thread.Sleep(1);
             }
         }
+
     }
 }
