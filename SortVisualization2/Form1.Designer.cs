@@ -36,6 +36,7 @@
             this.btnQuickSort = new System.Windows.Forms.Button();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.btnRadixSort = new System.Windows.Forms.Button();
+            this.btnHeapSort = new System.Windows.Forms.Button();
             this.pnlCount.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,11 +123,23 @@
             this.btnRadixSort.UseVisualStyleBackColor = true;
             this.btnRadixSort.Click += new System.EventHandler(this.btnRadixSort_Click);
             // 
+            // btnHeapSort
+            // 
+            this.btnHeapSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHeapSort.Location = new System.Drawing.Point(1532, 514);
+            this.btnHeapSort.Name = "btnHeapSort";
+            this.btnHeapSort.Size = new System.Drawing.Size(273, 73);
+            this.btnHeapSort.TabIndex = 6;
+            this.btnHeapSort.Text = "Heap sort";
+            this.btnHeapSort.UseVisualStyleBackColor = true;
+            this.btnHeapSort.Click += new System.EventHandler(this.btnHeapSort_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1814, 752);
+            this.Controls.Add(this.btnHeapSort);
             this.Controls.Add(this.btnRadixSort);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.btnQuickSort);
@@ -152,6 +165,7 @@
         private System.Windows.Forms.Button btnQuickSort;
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Button btnRadixSort;
+        private System.Windows.Forms.Button btnHeapSort;
     }
 }
 

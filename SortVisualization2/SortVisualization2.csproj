@@ -46,8 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\HeapSort.cs" />
+    <Compile Include="Algorithms\InsertionSort.cs" />
     <Compile Include="Algorithms\QuickSort.cs" />
     <Compile Include="Algorithms\RadixSort.cs" />
+    <Compile Include="Algorithms\ShellSort.cs" />
     <Compile Include="ElementHelper.cs" />
     <Compile Include="Entity\Element.cs" />
     <Compile Include="Form1.cs">

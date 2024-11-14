@@ -108,7 +108,6 @@ namespace SortVisualization2
             radixSort.RadixSortAlgorithm(elements, graphic);
 
 
-
             //to test radix sort without the GUI need to comment out the following code from Element file method called Selected lines var pen = new Pen(Color.MediumPurple, ArrayOptions.Width);  graphic.DrawLine(pen, Start, End);
             //            List<Element> elements = new List<Element>
             //{
@@ -139,6 +138,45 @@ namespace SortVisualization2
             //            {
             //                Console.WriteLine(element.Value);
             //            }
+
+        }
+
+        private void btnHeapSort_Click(object sender, EventArgs e)
+        {
+            HeapSort heapSort = new HeapSort();
+            heapSort.Sort(elements, graphic);
+
+
+            //to test Heap sort without the GUI
+            //List<Element> elements = new List<Element>
+            //{
+            //    new Element(new Point(0, 0), new Point(0, 170), 170),
+            //    new Element(new Point(0, 0), new Point(0, 45), 45),
+            //    new Element(new Point(0, 0), new Point(0, 75), 75),
+            //    new Element(new Point(0, 0), new Point(0, 90), 90),
+            //    new Element(new Point(0, 0), new Point(0, 802), 802),
+            //    new Element(new Point(0, 0), new Point(0, 24), 24),
+            //    new Element(new Point(0, 0), new Point(0, 2), 2),
+            //    new Element(new Point(0, 0), new Point(0, 66), 66)
+            //};
+            //// Display unsorted elements
+            //Console.WriteLine("Unsorted elements:");
+            //foreach (var element in elements)
+            //{
+            //    Console.WriteLine(element.Value);
+            //}
+
+            //HeapSort heapSort = new HeapSort();
+            //heapSort.Sort(elements, null); // Pass `null` for Graphics if not testing visuals
+
+
+
+            //// Display sorted elements
+            //Console.WriteLine("\nSorted elements:");
+            //foreach (var element in elements)
+            //{
+            //    Console.WriteLine(element.Value);
+            //}
 
         }
     }
