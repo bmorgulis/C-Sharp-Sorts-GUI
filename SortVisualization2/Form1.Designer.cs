@@ -37,6 +37,7 @@
             this.btnGenerate = new System.Windows.Forms.Button();
             this.btnRadixSort = new System.Windows.Forms.Button();
             this.btnHeapSort = new System.Windows.Forms.Button();
+            this.btnInsertionSort = new System.Windows.Forms.Button();
             this.pnlCount.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,7 +120,7 @@
             this.btnRadixSort.Name = "btnRadixSort";
             this.btnRadixSort.Size = new System.Drawing.Size(273, 73);
             this.btnRadixSort.TabIndex = 5;
-            this.btnRadixSort.Text = "Radix sort";
+            this.btnRadixSort.Text = "Radix sort (No GUI)";
             this.btnRadixSort.UseVisualStyleBackColor = true;
             this.btnRadixSort.Click += new System.EventHandler(this.btnRadixSort_Click);
             // 
@@ -130,15 +131,27 @@
             this.btnHeapSort.Name = "btnHeapSort";
             this.btnHeapSort.Size = new System.Drawing.Size(273, 73);
             this.btnHeapSort.TabIndex = 6;
-            this.btnHeapSort.Text = "Heap sort";
+            this.btnHeapSort.Text = "Heap sort (No GUI)";
             this.btnHeapSort.UseVisualStyleBackColor = true;
             this.btnHeapSort.Click += new System.EventHandler(this.btnHeapSort_Click);
+            // 
+            // btnInsertionSort
+            // 
+            this.btnInsertionSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertionSort.Location = new System.Drawing.Point(1532, 613);
+            this.btnInsertionSort.Name = "btnInsertionSort";
+            this.btnInsertionSort.Size = new System.Drawing.Size(273, 73);
+            this.btnInsertionSort.TabIndex = 7;
+            this.btnInsertionSort.Text = "Insertion sort (No GUI)";
+            this.btnInsertionSort.UseVisualStyleBackColor = true;
+            this.btnInsertionSort.Click += new System.EventHandler(this.btnInsertionSort_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1814, 752);
+            this.Controls.Add(this.btnInsertionSort);
             this.Controls.Add(this.btnHeapSort);
             this.Controls.Add(this.btnRadixSort);
             this.Controls.Add(this.btnGenerate);
@@ -166,6 +179,7 @@
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Button btnRadixSort;
         private System.Windows.Forms.Button btnHeapSort;
+        private System.Windows.Forms.Button btnInsertionSort;
     }
 }
 

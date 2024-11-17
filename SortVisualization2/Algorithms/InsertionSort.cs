@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,7 @@ namespace SortVisualization2.Algorithms
 {
     public class InsertionSort
     {
-        public static void InsertionSortAlgorithm(List<int> elements)
+        public static void InsertionSortAlgorithm(List<int> elements, Graphics graphic)
         {
             int size = elements.Count;
             for (int i = 1; i < size; i++) //start from 1 because we assume the first element is already sorted

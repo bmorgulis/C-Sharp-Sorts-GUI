@@ -179,5 +179,11 @@ namespace SortVisualization2
             //}
 
         }
+
+        private void btnInsertionSort_Click(object sender, EventArgs e)
+        {
+            InsertionSort insertionSort = new InsertionSort();
+            insertionSort.InsertionSortAlgorithm(elements, graphic);
+        }
     }
 }
