@@ -38,6 +38,7 @@
             this.btnRadixSort = new System.Windows.Forms.Button();
             this.btnHeapSort = new System.Windows.Forms.Button();
             this.btnInsertionSort = new System.Windows.Forms.Button();
+            this.btnShellSort = new System.Windows.Forms.Button();
             this.pnlCount.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             // btnBubbleSort
             // 
             this.btnBubbleSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBubbleSort.Location = new System.Drawing.Point(1532, 221);
+            this.btnBubbleSort.Location = new System.Drawing.Point(1532, 199);
             this.btnBubbleSort.Name = "btnBubbleSort";
             this.btnBubbleSort.Size = new System.Drawing.Size(273, 73);
             this.btnBubbleSort.TabIndex = 1;
@@ -94,7 +95,7 @@
             // btnQuickSort
             // 
             this.btnQuickSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuickSort.Location = new System.Drawing.Point(1532, 318);
+            this.btnQuickSort.Location = new System.Drawing.Point(1532, 278);
             this.btnQuickSort.Name = "btnQuickSort";
             this.btnQuickSort.Size = new System.Drawing.Size(273, 73);
             this.btnQuickSort.TabIndex = 3;
@@ -105,7 +106,7 @@
             // btnGenerate
             // 
             this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerate.Location = new System.Drawing.Point(1532, 130);
+            this.btnGenerate.Location = new System.Drawing.Point(1532, 120);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(273, 73);
             this.btnGenerate.TabIndex = 4;
@@ -116,7 +117,7 @@
             // btnRadixSort
             // 
             this.btnRadixSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRadixSort.Location = new System.Drawing.Point(1532, 416);
+            this.btnRadixSort.Location = new System.Drawing.Point(1532, 357);
             this.btnRadixSort.Name = "btnRadixSort";
             this.btnRadixSort.Size = new System.Drawing.Size(273, 73);
             this.btnRadixSort.TabIndex = 5;
@@ -127,7 +128,7 @@
             // btnHeapSort
             // 
             this.btnHeapSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHeapSort.Location = new System.Drawing.Point(1532, 514);
+            this.btnHeapSort.Location = new System.Drawing.Point(1529, 436);
             this.btnHeapSort.Name = "btnHeapSort";
             this.btnHeapSort.Size = new System.Drawing.Size(273, 73);
             this.btnHeapSort.TabIndex = 6;
@@ -138,7 +139,7 @@
             // btnInsertionSort
             // 
             this.btnInsertionSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertionSort.Location = new System.Drawing.Point(1532, 613);
+            this.btnInsertionSort.Location = new System.Drawing.Point(1532, 515);
             this.btnInsertionSort.Name = "btnInsertionSort";
             this.btnInsertionSort.Size = new System.Drawing.Size(273, 73);
             this.btnInsertionSort.TabIndex = 7;
@@ -146,11 +147,22 @@
             this.btnInsertionSort.UseVisualStyleBackColor = true;
             this.btnInsertionSort.Click += new System.EventHandler(this.btnInsertionSort_Click);
             // 
+            // btnShellSort
+            // 
+            this.btnShellSort.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShellSort.Location = new System.Drawing.Point(1532, 594);
+            this.btnShellSort.Name = "btnShellSort";
+            this.btnShellSort.Size = new System.Drawing.Size(273, 73);
+            this.btnShellSort.TabIndex = 8;
+            this.btnShellSort.Text = "Shell sort (No GUI)";
+            this.btnShellSort.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1814, 752);
+            this.Controls.Add(this.btnShellSort);
             this.Controls.Add(this.btnInsertionSort);
             this.Controls.Add(this.btnHeapSort);
             this.Controls.Add(this.btnRadixSort);
@@ -180,6 +192,7 @@
         private System.Windows.Forms.Button btnRadixSort;
         private System.Windows.Forms.Button btnHeapSort;
         private System.Windows.Forms.Button btnInsertionSort;
+        private System.Windows.Forms.Button btnShellSort;
     }
 }
 
