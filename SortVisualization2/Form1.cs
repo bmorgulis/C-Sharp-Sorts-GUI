@@ -112,13 +112,13 @@ namespace SortVisualization2
             //            List<Element> elements = new List<Element>
             //{
             //    new Element(new Point(0, 0), new Point(0, 170), 170),
-            //    new Element(new Point(0, 0), new Point(0, 45), 45),
-            //    new Element(new Point(0, 0), new Point(0, 75), 75),
+            //    new Element(new Point(0, 0), new Point(0, 49), 49),
+            //    new Element(new Point(0, 0), new Point(0, 55), 55),
             //    new Element(new Point(0, 0), new Point(0, 90), 90),
-            //    new Element(new Point(0, 0), new Point(0, 802), 802),
+            //    new Element(new Point(0, 0), new Point(0, 704), 704),
             //    new Element(new Point(0, 0), new Point(0, 24), 24),
-            //    new Element(new Point(0, 0), new Point(0, 2), 2),
-            //    new Element(new Point(0, 0), new Point(0, 66), 66)
+            //    new Element(new Point(0, 0), new Point(0, 3), 3),
+            //    new Element(new Point(0, 0), new Point(0, 68), 68)
             //};
 
             //            // Display unsorted elements
@@ -151,13 +151,13 @@ namespace SortVisualization2
             //List<Element> elements = new List<Element>
             //{
             //    new Element(new Point(0, 0), new Point(0, 170), 170),
-            //    new Element(new Point(0, 0), new Point(0, 45), 45),
-            //    new Element(new Point(0, 0), new Point(0, 75), 75),
+            //    new Element(new Point(0, 0), new Point(0, 49), 49),
+            //    new Element(new Point(0, 0), new Point(0, 55), 55),
             //    new Element(new Point(0, 0), new Point(0, 90), 90),
-            //    new Element(new Point(0, 0), new Point(0, 802), 802),
+            //    new Element(new Point(0, 0), new Point(0, 704), 704),
             //    new Element(new Point(0, 0), new Point(0, 24), 24),
-            //    new Element(new Point(0, 0), new Point(0, 2), 2),
-            //    new Element(new Point(0, 0), new Point(0, 66), 66)
+            //    new Element(new Point(0, 0), new Point(0, 3), 3),
+            //    new Element(new Point(0, 0), new Point(0, 68), 68)
             //};
             //// Display unsorted elements
             //Console.WriteLine("Unsorted elements:");
@@ -192,13 +192,13 @@ namespace SortVisualization2
             //List<Element> elements = new List<Element>
             //{
             //    new Element(new Point(0, 0), new Point(0, 170), 170),
-            //    new Element(new Point(0, 0), new Point(0, 45), 45),
-            //    new Element(new Point(0, 0), new Point(0, 75), 75),
+            //    new Element(new Point(0, 0), new Point(0, 49), 49),
+            //    new Element(new Point(0, 0), new Point(0, 55), 55),
             //    new Element(new Point(0, 0), new Point(0, 90), 90),
-            //    new Element(new Point(0, 0), new Point(0, 802), 802),
+            //    new Element(new Point(0, 0), new Point(0, 704), 704),
             //    new Element(new Point(0, 0), new Point(0, 24), 24),
-            //    new Element(new Point(0, 0), new Point(0, 2), 2),
-            //    new Element(new Point(0, 0), new Point(0, 66), 66)
+            //    new Element(new Point(0, 0), new Point(0, 3), 3),
+            //    new Element(new Point(0, 0), new Point(0, 68), 68)
             //};
 
             //// Display unsorted elements
@@ -211,6 +211,46 @@ namespace SortVisualization2
             //// Sort using Radix Sort
             //InsertionSort insertionSort = new InsertionSort();
             //insertionSort.InsertionSortAlgorithm(elements, null); // Pass `null` for Graphics if not testing visuals
+
+            //// Display sorted elements
+            //Console.WriteLine("\nSorted elements:");
+            //foreach (var element in elements)
+            //{
+            //    Console.WriteLine(element.Value);
+            //}
+        }
+
+        private void btnShellSort_Click(object sender, EventArgs e)
+        {
+            ShellSort shellSort = new ShellSort();
+            shellSort.ShellSortAlgorithm(elements, graphic);
+
+
+
+
+            ////to test Shell sort without the GUI
+            //List<Element> elements = new List<Element>
+            //{
+            //    new Element(new Point(0, 0), new Point(0, 170), 170),
+            //    new Element(new Point(0, 0), new Point(0, 49), 49),
+            //    new Element(new Point(0, 0), new Point(0, 55), 55),
+            //    new Element(new Point(0, 0), new Point(0, 90), 90),
+            //    new Element(new Point(0, 0), new Point(0, 704), 704),
+            //    new Element(new Point(0, 0), new Point(0, 24), 24),
+            //    new Element(new Point(0, 0), new Point(0, 3), 3),
+            //    new Element(new Point(0, 0), new Point(0, 68), 68)
+            //};
+
+            //// Display unsorted elements
+            //Console.WriteLine("Unsorted elements:");
+            //foreach (var element in elements)
+            //{
+            //    Console.WriteLine(element.Value);
+            //}
+
+            //// Sort using Shell Sort
+            //ShellSort shellSort = new ShellSort();
+            //shellSort.ShellSortAlgorithm(elements, graphic); // Pass `null` for Graphics if not testing visuals
 
             //// Display sorted elements
             //Console.WriteLine("\nSorted elements:");

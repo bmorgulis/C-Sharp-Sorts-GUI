@@ -156,6 +156,7 @@
             this.btnShellSort.TabIndex = 8;
             this.btnShellSort.Text = "Shell sort (No GUI)";
             this.btnShellSort.UseVisualStyleBackColor = true;
+            this.btnShellSort.Click += new System.EventHandler(this.btnShellSort_Click);
             // 
             // Form1
             // 

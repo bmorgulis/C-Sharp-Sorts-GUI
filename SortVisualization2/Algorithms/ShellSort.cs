@@ -31,18 +31,3 @@ namespace SortVisualization2.Algorithms
         }
     }
 }
-
-
-
-
-    for (int i = gap; i < size; i++)
-    {
-        int temp = elements[i];
-        int j;
-        for (j = i; j >= gap && elements[j - gap] > temp; j -= gap)
-        {
-            elements[j] = elements[j - gap];
-        }
-        elements[j] = temp;
-    }
-}
